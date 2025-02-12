@@ -3,7 +3,7 @@ import './styles.scss'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
 
-const Button = ({ className, type = 'button', label, children, ...props }) => {
+const Button = ({ className, type, label, children, ...props }) => {
   const classes = clsx('button', className)
 
   return (
@@ -18,6 +18,11 @@ Button.propTypes = {
   type: PropTypes.string, // Optional: button type (default: "button")
   label: PropTypes.string, // Optional: text label for the button
   children: PropTypes.node, // Optional: React children
+}
+
+Button.defaultProps = {
+  type: 'button',
+  label: '',
 }
 
 export default Button
