@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --font-secondary: Roboto, sans-serif;
+  --orange-primary: #ff9964;
+  --orange-secondary: #ff6d63;
+  --orange-alt: #ff7a64;
+  --blue-primary: #23abb5;
+  --blue-secondary: #eff5fc;
+  --bg-primary: #f1f5ff;
+  --bg-secondary: #fff;
+  --disabled: #d4e5fe;
+  --border-color: #d4e5f9;
+  --text-primary: #000;
+  --text-secondary: rgba(0, 0, 0, 0.502);
+  --focus: #000;
+  --button-text: #fff;
+  --shadow: #0006;
+  --invert-color: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: var(--font-family);
+  font-size: 14px;
+  overflow: auto;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input {
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+button {
+  cursor: pointer;
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 40px);
+}

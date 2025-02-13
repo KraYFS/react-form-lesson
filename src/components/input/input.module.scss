@@ -1,0 +1,13 @@
+.input {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 16px;
+    outline: none;
+    padding: 0 10px;
+    transition: .2s all;
+    &:focus {
+        box-shadow: 0 0 0 2px var(--orange-primary);
+    }
+}
