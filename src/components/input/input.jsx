@@ -11,7 +11,7 @@ const Input = (props) => {
       name={props.name}
       autoComplete={props.autoComplete}
       className={styles.input}
-      {...register(props.register)}
+      {...register(props.register, { required: props.required })}
     />
   );
 };
@@ -22,6 +22,7 @@ Input.propTypes = {
   name: PropTypes.string,
   autoComplete: PropTypes.string,
   register: PropTypes.string,
+  required: PropTypes.boolean,
 };
 
 export default Input;
