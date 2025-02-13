@@ -1,5 +1,3 @@
-import Input from "./components/input/input";
-
 function App() {
   return (
     <div className="container">
