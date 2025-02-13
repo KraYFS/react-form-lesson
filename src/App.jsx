@@ -3,11 +3,7 @@ import Input from "./components/input/input";
 import Button from "./components/button/button";
 
 function App() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const submit = (data) => {
     console.log(data);
@@ -46,7 +42,7 @@ function App() {
           </svg>
         </a>
         <form onSubmit={handleSubmit(submit)} className="form">
-          <div aria-invalid={errors.name || errors.password ? '123' : '323'} className="from_inputs">
+          <div className="from_inputs">
             <Input
               placeholder="Your email"
               type="email"
