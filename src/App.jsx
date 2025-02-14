@@ -56,7 +56,15 @@ function App() {
               register={register}
             />
           </div>
-          <Button text="Log in" />
+          <div className="form__buttons">
+            <Button text="Log in" />
+            <br />
+            <Button
+              type="button"
+              styleGoogle="button--google"
+              text="Sign in with Google"
+            />
+          </div>
         </form>
       </div>
     </div>
