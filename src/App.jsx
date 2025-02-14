@@ -3,11 +3,16 @@ import Input from "./components/Input/index.jsx";
 import Button from "./components/Button/index.jsx";
 
 function App() {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const submit = (data) => {
     console.log(data);
   };
+
   return (
     <div className="container">
       <div className="auth">
@@ -45,16 +50,23 @@ function App() {
           <div className="from_inputs">
             <Input
               placeholder="Your email"
-              type="email"
-              name="mail"
+              type="text"
+              name="email"
+              aria-invalid={errors}
               register={register}
             />
+            {errors.email && (
+              <span className="from__error">{errors.email.message}</span>
+            )}
             <Input
               placeholder="Password"
               type="password"
               name="password"
               register={register}
             />
+            {errors.password && (
+              <span className="from__error">{errors.password.message}</span>
+            )}
           </div>
           <div className="form__buttons">
             <Button text="Log in" />
