@@ -1,8 +1,8 @@
-import styles from "./styles.module.scss";
+import "./styles.scss";
 import PropTypes from "prop-types";
 
 const Button = (props) => {
-  return <button type={props.type} className={styles.button}>{props.text}</button>;
+  return <button type={props.type} className='button'>{props.text}</button>;
 };
 
 Button.propTypes = {

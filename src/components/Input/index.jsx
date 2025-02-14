@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./styles.module.scss";
+import "./styles.scss";
 
 const Input = ({
   placeholder,
@@ -12,7 +12,7 @@ const Input = ({
   return (
     <input
       placeholder={placeholder}
-      className={styles.input}
+      className='input'
       type={type}
       autoComplete={autoComplete}
       {...register(name)}
