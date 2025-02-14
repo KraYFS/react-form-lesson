@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import Input from "./components/Input/index.jsx";
 import Button from "./components/Button/index.jsx";
+import GoogleButtonIcon from "./components/icons/GoogleButtonIcon/GoogleButtonIcon.jsx";
 
 function App() {
   const { register, handleSubmit } = useForm();
@@ -57,12 +58,12 @@ function App() {
             />
           </div>
           <div className="form__buttons">
-            <Button text="Log in" />
+            <Button text="Log in" type="submit" />
             <br />
             <Button
-              type="button"
-              styleGoogle="button--google"
+              className="button--google"
               text="Sign in with Google"
+              icon={<GoogleButtonIcon />}
             />
           </div>
         </form>
