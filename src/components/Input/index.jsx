@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./input.module.scss";
+import styles from "./styles.module.scss";
 
 const Input = ({
   placeholder,
