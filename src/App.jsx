@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import Input from "./components/Input/index.jsx";
-import Button from "./components/Button/index.jsx";
-import GoogleButtonIcon from "./components/icons/GoogleButtonIcon/GoogleButtonIcon.jsx";
+import Input from "./components/Input";
+import Button from "./components/Button";
+import GoogleButtonIcon from "./components/icons/GoogleButtonIcon";
 
 function App() {
   const { register, handleSubmit } = useForm();
