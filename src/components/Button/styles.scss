@@ -1,13 +1,34 @@
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--orange-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange-alt);
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 9px;
+  border-radius: 25px;
+  transition: 0.2s all;
+
+  &--google {
+    background-color: transparent;
+    color: var(--gray);
+    border: 1px solid var(--gray);
+    gap: 0.5rem;
+    max-height: 36px;
+  }
+
+  &--google:hover {
+    background-color: var(--gray);
     color: #fff;
-    width: 100%;
-    max-width: 300px;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 10px;
-    border-radius: 25px;
+  }
+
+  &__img {
+    display: inline-flex;
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+  }
 }
