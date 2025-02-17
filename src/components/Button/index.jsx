@@ -1,14 +1,11 @@
 import "./styles.scss";
+import clsx from "clsx";
 import PropTypes from "prop-types";
 
 const Button = ({ type = "button", text, className, icon }) => {
   return (
-    <button type={type} className={`button ${className || ""}`}>
-      {className && (
-        <span className="button__img">
-          <>{icon}</>
-        </span>
-      )}
+    <button type={type} className={clsx("button", className)}>
+      {icon && <span className="button__img">{icon}</span>}
       {text}
     </button>
   );
