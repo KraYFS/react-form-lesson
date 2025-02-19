@@ -4,7 +4,7 @@ import './styles.scss'
 const Input = ({
   placeholder,
   type,
-  register,
+  register = () => {},
   name,
   autoComplete,
   ...rest
