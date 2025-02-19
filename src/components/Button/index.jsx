@@ -2,10 +2,10 @@ import './styles.scss'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
 
-const Button = ({ type = "button", text, className, icon, onClick }) => {
+const Button = ({ type = 'button', text, className, icon, onClick }) => {
   return (
-    <button onClick={onClick} type={type} className={clsx("button", className)}>
-      {icon && <span className="button__img">{icon}</span>}
+    <button onClick={onClick} type={type} className={clsx('button', className)}>
+      {icon && <span className='button__img'>{icon}</span>}
       {text}
     </button>
   )

@@ -12,7 +12,7 @@ const Input = ({
   return (
     <input
       placeholder={placeholder}
-      className="input"
+      className='input'
       type={type}
       autoComplete={autoComplete}
       {...register(name)}
