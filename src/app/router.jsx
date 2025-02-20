@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 
-const LoginPage = React.lazy(() => import('../pages/login'))
+const LoginPage = React.lazy(() => import('@/pages/login'))
 
 const Router = createBrowserRouter([
   {
