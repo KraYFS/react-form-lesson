@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
+import ErrorPage from '../pages/errorPage'
 
 const LoginPage = React.lazy(() => import('@/pages/login'))
 
@@ -10,7 +11,12 @@ const Router = createBrowserRouter([
       <Suspense fallback={<div>Loading...</div>}>
         <LoginPage />
       </Suspense>
-    )
+    ),
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '*',
+    element: <Navigate to='/login' />
   }
 ])
 
