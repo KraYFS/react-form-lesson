@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
-import ErrorPage from '../pages/errorPage'
+import ErrorPage from '@/pages/errorPage'
 
 const LoginPage = React.lazy(() => import('@/pages/login'))
 
