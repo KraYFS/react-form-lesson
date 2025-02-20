@@ -1,0 +1,20 @@
+.page404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: var(--orange-text);
+
+  &__http-code {
+    font-size: 64px;
+    font-weight: 600;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
