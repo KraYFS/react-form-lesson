@@ -1,0 +1,14 @@
+.link {
+  border-bottom: 1px solid #0000;
+  color: var(--orange-primary);
+  font-weight: 700;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-decoration: none;
+  transition: 0.5s all;
+
+  &:hover {
+    border-color: var(--orange-primary);
+  }
+}

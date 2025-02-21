@@ -4,6 +4,8 @@ import Button from '@/components/Button'
 import { GoogleIcon } from '@/components/icons'
 import LogoLink from '@/components/LogoLink'
 import './styles.scss'
+import Copyright from '../../components/Copyright'
+import Link from '../../components/Link'
 
 const Login = () => {
   const { register, handleSubmit } = useForm()
@@ -44,22 +46,19 @@ const Login = () => {
               <span>
                 Don’t have an account<em>?</em>
               </span>
-              <a
+              <Link
+                text='Register'
                 href='https://partners.joinmassive.com/create-account'
-                className='form__register-link'
-              >
-                Register
-              </a>
+              />
             </div>
             <div className='form__reset-password'>
-              <a href='https://partners.joinmassive.com/reset'>
-                Reset your password
-              </a>
+              <Link
+                text='Reset your password'
+                href='https://partners.joinmassive.com/reset'
+              />
             </div>
           </div>
-            <span className='form__copyright'>
-              © 2025 Massive Computing, Inc.
-            </span>
+          <Copyright />
         </form>
       </div>
     </div>
