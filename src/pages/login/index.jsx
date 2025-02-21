@@ -39,6 +39,27 @@ const Login = () => {
               icon={<GoogleIcon />}
             />
           </div>
+          <div className='form__register-reset'>
+            <div className='form__register'>
+              <span>
+                Don’t have an account<em>?</em>
+              </span>
+              <a
+                href='https://partners.joinmassive.com/create-account'
+                className='form__register-link'
+              >
+                Register
+              </a>
+            </div>
+            <div className='form__reset-password'>
+              <a href='https://partners.joinmassive.com/reset'>
+                Reset your password
+              </a>
+            </div>
+          </div>
+            <span className='form__copyright'>
+              © 2025 Massive Computing, Inc.
+            </span>
         </form>
       </div>
     </div>
