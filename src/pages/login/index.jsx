@@ -3,6 +3,7 @@ import Input from '@/components/Input'
 import Button from '@/components/Button'
 import { GoogleIcon } from '@/components/icons'
 import LogoLink from '@/components/LogoLink'
+import './styles.scss'
 
 const Login = () => {
   const { register, handleSubmit } = useForm()
@@ -15,7 +16,7 @@ const Login = () => {
       <div className='auth'>
         <LogoLink />
         <form onSubmit={handleSubmit(submit)} className='form'>
-          <div className='from_inputs'>
+          <div className='form__inputs'>
             <Input
               placeholder='Your email'
               type='email'

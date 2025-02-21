@@ -1,4 +1,5 @@
 import { MassiveIcon } from '@/components/icons'
+import './styles.scss'
 
 const LogoLink = () => {
   return (
