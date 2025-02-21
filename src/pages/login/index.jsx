@@ -58,7 +58,7 @@ const Login = () => {
               />
             </div>
           </div>
-          <Copyright text='© 2025 Massive Computing, Inc.' />
+          <Copyright text={`© ${new Date().getFullYear()} Massive Computing, Inc.`} />
         </form>
       </div>
     </div>
