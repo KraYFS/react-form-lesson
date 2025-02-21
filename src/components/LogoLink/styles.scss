@@ -1,0 +1,14 @@
+.logo_title {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  padding: 0 10px;
+  transition: 0.5s all;
+  border-radius: 2px;
+  height: 100%;
+  max-width: 240px;
+  width: 100%;
+
+  &:hover {
+    border-color: var(--orange-primary);
+  }
+}

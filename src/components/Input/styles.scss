@@ -1,3 +1,5 @@
+$breakpoint-sm: 576px;
+
 .input {
   background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
@@ -11,5 +13,9 @@
   max-width: 340px;
   &:focus {
     box-shadow: 0 0 0 2px var(--orange-primary);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: 100%;
   }
 }
