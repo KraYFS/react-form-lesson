@@ -58,7 +58,7 @@ const Login = () => {
               />
             </div>
           </div>
-          <Copyright />
+          <Copyright text='© 2025 Massive Computing, Inc.' />
         </form>
       </div>
     </div>

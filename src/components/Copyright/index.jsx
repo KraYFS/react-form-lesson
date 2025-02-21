@@ -1,7 +1,7 @@
 import './styles.scss'
 
-const Copyright = () => {
-  return <span className='copyright'>© 2025 Massive Computing, Inc.</span>
+const Copyright = (props) => {
+  return <span className='copyright'>{props.text}</span>
 }
 
 export default Copyright
