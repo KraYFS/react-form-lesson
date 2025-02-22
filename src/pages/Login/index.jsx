@@ -13,6 +13,7 @@ const Login = () => {
   const submit = data => {
     console.log(data)
   }
+
   return (
     <div className='container'>
       <div className='auth'>
@@ -47,14 +48,14 @@ const Login = () => {
                 Don’t have an account<em>?</em>
               </span>
               <Link
-                text='Register'
-                href='https://partners.joinmassive.com/create-account'
+                label='Register'
+                dest='https://partners.joinmassive.com/create-account'
               />
             </div>
             <div className='form__reset-password'>
               <Link
-                text='Reset your password'
-                href='https://partners.joinmassive.com/reset'
+                label='Reset your password'
+                dest='https://partners.joinmassive.com/reset'
               />
             </div>
           </div>
