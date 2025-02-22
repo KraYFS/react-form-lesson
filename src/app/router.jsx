@@ -3,7 +3,7 @@ import { createBrowserRouter, Navigate } from 'react-router-dom'
 
 import ErrorPage from '@/pages/Error'
 
-const LoginPage = React.lazy(() => import('@/pages/LoginPage'))
+const LoginPage = React.lazy(() => import('@/pages/Login'))
 
 const Router = createBrowserRouter([
   {
