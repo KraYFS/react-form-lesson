@@ -4,8 +4,8 @@ import Button from '@/components/Button'
 import { GoogleIcon } from '@/components/icons'
 import LogoLink from '@/components/LogoLink'
 import './styles.scss'
-import Copyright from '../../components/Copyright'
-import Link from '../../components/Link'
+import Copyright from '@/components/Copyright'
+import Link from '@/components/Link'
 
 const Login = () => {
   const { register, handleSubmit } = useForm()
