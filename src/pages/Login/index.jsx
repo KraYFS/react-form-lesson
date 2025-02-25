@@ -38,6 +38,7 @@ const Login = () => {
               name='password'
               register={register}
             />
+
             {errors.password && (
               <span className='form__error'>{errors.password.message}</span>
             )}
