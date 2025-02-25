@@ -12,20 +12,20 @@ const Input = ({
   return (
     <input
       placeholder={placeholder}
-      className="input"
+      className='input'
       type={type}
       autoComplete={autoComplete}
       {...register(
         name,
-        name === "email"
+        name === 'email'
           ? {
-              required: "Email обязателен",
+              required: 'Email is required',
               pattern: {
                 value: /^\S+@\S+$/i,
-                message: "Некорректный формат email",
-              },
+                message: 'Incorrect email format'
+              }
             }
-          : { required: "Введите пароль" }
+          : { required: 'Enter password' }
       )}
       {...rest}
     />

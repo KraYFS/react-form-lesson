@@ -42,4 +42,10 @@
   &__reset-password {
     margin-top: 8px;
   }
+
+  &__error {
+    margin-top: 10px;
+    font-weight: 700;
+    color: var(--orange-secondary);
+  }
 }
