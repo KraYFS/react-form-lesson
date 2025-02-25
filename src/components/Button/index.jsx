@@ -1,26 +1,22 @@
-import GoogleButtonIcon from "../GoogleButtonIcon/GoogleButtonIcon";
-import "./styles.scss";
-import PropTypes from "prop-types";
+import './styles.scss'
+import clsx from 'clsx'
+import PropTypes from 'prop-types'
 
-const Button = (props) => {
+const Button = ({ type = 'button', text, className, icon, onClick }) => {
   return (
-    <button type={props.type} className={`button ${props.styleGoogle}`}>
-      {props.styleGoogle ? (
-        <span className="button__img">
-          <GoogleButtonIcon />
-        </span>
-      ) : (
-        ""
-      )}
-      {props.text}
+    <button onClick={onClick} type={type} className={clsx('button', className)}>
+      {icon && <span className='button__img'>{icon}</span>}
+      {text}
     </button>
-  );
-};
+  )
+}
 
 Button.propTypes = {
+  onClick: PropTypes.func,
   type: PropTypes.string,
   text: PropTypes.string,
-  styleGoogle: PropTypes.string,
-};
+  className: PropTypes.string,
+  icon: PropTypes.element
+}
 
-export default Button;
+export default Button

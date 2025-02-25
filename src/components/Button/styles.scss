@@ -16,7 +16,7 @@
     background-color: transparent;
     color: var(--gray);
     border: 1px solid var(--gray);
-    gap: .5rem;
+    gap: 0.5rem;
     max-height: 36px;
   }
 
@@ -27,6 +27,8 @@
 
   &__img {
     display: inline-flex;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
   }
 }

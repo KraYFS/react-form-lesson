@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
-import "./styles.scss";
+import PropTypes from 'prop-types'
+import './styles.scss'
 
 const Input = ({
   placeholder,
   type,
-  register,
+  register = () => {},
   name,
   autoComplete,
   ...rest
@@ -29,15 +29,15 @@ const Input = ({
       )}
       {...rest}
     />
-  );
-};
+  )
+}
 
 Input.propTypes = {
   placeholder: PropTypes.string,
   type: PropTypes.string,
   name: PropTypes.string,
   autoComplete: PropTypes.string,
-  register: PropTypes.object,
-};
+  register: PropTypes.object
+}
 
-export default Input;
+export default Input
