@@ -8,7 +8,11 @@ import Copyright from '@/components/Copyright'
 import Link from '@/components/Link'
 
 const Login = () => {
-  const { register, handleSubmit } = useForm()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm()
 
   const submit = data => {
     console.log(data)
@@ -22,15 +26,22 @@ const Login = () => {
             <Input
               placeholder='Your email'
               type='email'
-              name='mail'
+              name='email'
               register={register}
             />
+            {errors.email && (
+              <span className='form__error'>{errors.email.message}</span>
+            )}
             <Input
               placeholder='Password'
               type='password'
               name='password'
               register={register}
             />
+
+            {errors.password && (
+              <span className='form__error'>{errors.password.message}</span>
+            )}
           </div>
           <div className='form__buttons'>
             <Button text='Log in' type='submit' />

@@ -15,7 +15,18 @@ const Input = ({
       className='input'
       type={type}
       autoComplete={autoComplete}
-      {...register(name)}
+      {...register(
+        name,
+        name === 'email'
+          ? {
+              required: 'Email is required',
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: 'Incorrect email format'
+              }
+            }
+          : { required: 'Enter password' }
+      )}
       {...rest}
     />
   )
