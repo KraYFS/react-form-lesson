@@ -2,9 +2,8 @@ import { render, screen } from '@testing-library/react'
 import Copyright from './index'
 
 test('renders the copyright text', () => {
-  const testText = 'test text'
-  render(<Copyright text={testText} />)
+  render(<Copyright />)
 
-  const copyrightElement = screen.getByText(testText)
+  const copyrightElement = screen.getByText(/© \d{4} Massive Computing, Inc./)
   expect(copyrightElement).toBeInTheDocument()
 })

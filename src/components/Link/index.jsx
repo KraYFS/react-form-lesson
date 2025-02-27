@@ -1,13 +1,29 @@
 import './styles.scss'
 
-const Link = (props) => {
+import { Link as ReactLink } from 'react-router-dom'
+
+const isExternalLink = url => url?.startsWith('http')
+
+const Link = ({ label, dest }) => {
+  const isExternal = isExternalLink(dest)
+
   return (
-    <a
-      href={props.href}
-      className='link'
-    >
-      {props.text}
-    </a>
+    <>
+      {isExternal ? (
+        <a
+          href={dest}
+          className='link'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          {label}
+        </a>
+      ) : (
+        <ReactLink to={dest} className='link'>
+          {label}
+        </ReactLink>
+      )}
+    </>
   )
 }
 
