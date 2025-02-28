@@ -1,0 +1,25 @@
+.form-item {
+  width: 100%;
+  text-align: center;
+
+  &__label {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__hint {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+  }
+
+  &__error {
+    margin-top: 10px;
+    font-weight: 700;
+    color: var(--orange-secondary);
+  }
+
+  &__control {
+    margin: 4px 0;
+  }
+}
