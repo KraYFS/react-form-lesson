@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types'
 import './styles.scss'
 
-const Input = ({
+const FormInput = ({
   placeholder,
   type,
-  register = () => {},
   name,
   autoComplete,
   ...rest
@@ -15,24 +14,12 @@ const Input = ({
       className='input'
       type={type}
       autoComplete={autoComplete}
-      {...register(
-        name,
-        name === 'email'
-          ? {
-              required: 'Email is required',
-              pattern: {
-                value: /^\S+@\S+$/i,
-                message: 'Incorrect email format'
-              }
-            }
-          : { required: 'Enter password' }
-      )}
       {...rest}
     />
   )
 }
 
-Input.propTypes = {
+FormInput.propTypes = {
   placeholder: PropTypes.string,
   type: PropTypes.string,
   name: PropTypes.string,
@@ -40,4 +27,4 @@ Input.propTypes = {
   register: PropTypes.object
 }
 
-export default Input
+export default FormInput
